@@ -11,7 +11,7 @@ Silex Skeleton
 Silex 使用 Composer 来创建一个新项目:
 
 ```
-$ composer create-project rswork/silex-skeleton path/to/install ~0.1
+$ composer create-project rswork/wechat-demo path/to/install ~0.1
 ```
 
 Composer 会创建一个新的 Silex 项目在 `path/to/install` 目录里。
