@@ -1,0 +1,16 @@
+{% extends "base.html.twig" %}
+
+{% block content %}
+<h1>wechat info</h1>
+<h2>appname: {{ wechat.name }}</h2>
+<h2>appid: {{ wechat.appid }}</h2>
+<h2>openid: {{ wechat.openid }}</h2>
+<h2>access token: {{ wechat.access_token|default('false') }}</h2>
+<h2>refresh token: {{ wechat.refresh_token|default('false') }}</h2>
+
+{% if wechat.nickname is defined %}
+<h2>nickname: {{ wechat.nickname }}</h2>
+<h2>language: {{ wechat.language }}</h2>
+<h2>head image: <img src="{{ wechat.headimgurl|raw }}" style="width: 100px;" /></h2>
+{% endif %}
+{% endblock content %}
